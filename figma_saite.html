@@ -19,7 +19,7 @@
     }
     .logo-section .logo {
       font-weight: bold;
-      font-size: 22px;
+      font-size: 1000px;
     }
     .subtitle {
       font-size: 16px;
@@ -95,24 +95,13 @@
       font-size: 18px;
       text-align: center;
     }
-    .arrow {
-      width: 4px;
-      height: 100px;
-      background-color: black;
-      margin: 10px auto;
-      position: relative;
-    }
-    .arrow::after {
-      content: '';
-      position: absolute;
-      left: -6px;
-      border: solid black;
-      border-width: 0 4px 4px 0;
-      padding: 10px;
-    }
-    .arrow.up::after { transform: rotate(-135deg); top: 0; }
-    .arrow.down::after { transform: rotate(45deg); bottom: 0; }
-
+    .platform img {
+      margin-top: 10px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50px;
+      transform: rotate(90deg);}
     .reviews-section {
       padding: 60px 20px;
       background-color: #7FD5DD;
@@ -159,10 +148,10 @@
 <body>
 
   <header>
-    <div class="logo-section">
-      <div class="logo">LOGO</div>
-      <div class="subtitle">Currency Converter</div>
+    <div class="logo">
+      <img src="c:\Users\Vanessa\Downloads\Снимок-экрана-2025-05-08-192249.svg" alt="Logo" style="height: 85px;">
     </div>
+    
     <nav>
       <a href="#">About Us</a>
       <a href="#">Clients</a>
@@ -196,23 +185,26 @@
 
   <div class="divider"></div>
 
-  <section class="download-section">
+  <section class="download-section" style="margin-top: 20px;">
     <h2>Download Currency Converter</h2>
     <div class="downloads">
       <div class="platform">
-        <p>Windows (EXE)</p>
-        <div class="arrow up"></div>
+        <p style="color: red;">Windows (EXE)</p>
+        <img src="https://img.icons8.com/ios-filled/50/000000/down.png" alt="Arrow" style="transform: rotate(180deg); width: 50px;" />
       </div>
       <div class="platform">
-        <div class="arrow down"></div>
-        <p>Mac (DMG)</p>
+        <img src="https://img.icons8.com/ios-filled/50/000000/down.png" alt="Arrow Up" style="transform: rotate(360deg);" />
+        <p style="color: red;">Mac (DMG)</p>
       </div>
       <div class="platform">
-        <p>Linux (DEB)</p>
-        <div class="arrow up"></div>
+        <p style="color: red;">Linux (DEB)</p>
+        <img src="https://img.icons8.com/ios-filled/50/000000/down.png" alt="Arrow" style="transform: rotate(180deg); width: 50px;" />
       </div>
     </div>
   </section>
+  
+  
+  
 
   <div class="divider"></div>
 
